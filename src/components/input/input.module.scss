@@ -1,0 +1,39 @@
+@import "/src/styles/variable.scss";
+.inputWrapper {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  label {
+    position: absolute;
+    display: block;
+    left: 1rem;
+    transition: ease-in 0.2s;
+    color: #7a7a7a;
+  }
+  .input {
+    padding-left: 1rem;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    margin: 1.5rem auto;
+    color: $primary-text;
+    width: 100%;
+    &:placeholder-shown + label {
+      visibility: hidden;
+      font-size: 1rem;
+      z-index: -1;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:not(:placeholder-shown) + label {
+      visibility: visible;
+      top: 0;
+      z-index: 1;
+      font-size: 0.8rem;
+      transform: translateY(0.4rem);
+    }
+  }
+}

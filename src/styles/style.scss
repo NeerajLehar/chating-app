@@ -1,0 +1,43 @@
+// variable colors
+$primary-color: #d8dde6;
+$primary-color-2: #152757;
+
+// variable colors end
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background: url(../images/main-bg.png) no-repeat top right, $primary-color;
+  background-size: auto 25%;
+  height: 100vh;
+}
+
+.header_container {
+  padding-top: 50%;
+  font-size: 20px;
+  text-align: center;
+  .header_content {
+    display: inline-block;
+    background: url(../images/header_bg.svg) no-repeat;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-color-2;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0 4rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+}
+.btn-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}

@@ -1,0 +1,11 @@
+{
+  "title": "JSON content used at build time with Gatsby",
+  "content": {
+    "homePage": {
+      "all_need": "All You Need",
+      "features": "Get Awesome Features",
+      "login": "Login",
+      "Sign_up": "Sign up"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "./style.scss";
+@media (min-width: 768px) {
+  main {
+    background-size: 100%;
+  }
+
+  .header_container {
+    padding-top: 15%;
+    .header_content {
+    }
+    h1 {
+      font-size: 4rem;
+      padding: 0.2rem;
+    }
+    p {
+      font-size: 2.5rem;
+      padding: 2rem;
+    }
+  }
+  .btn-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+}
